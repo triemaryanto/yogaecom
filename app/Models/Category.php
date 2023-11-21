@@ -14,4 +14,29 @@ class Category extends Model implements Auditable
     use HasFactory;
     use SoftDeletes;
     public $guarded = [];
+
+        /**
+     * posts
+     *
+     * @return void
+     */
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+    /**
+     * posts
+     *
+     * @return void
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+    /**
+     * image
+     *
+     * @return Attribute
+     */
+ 
 }
