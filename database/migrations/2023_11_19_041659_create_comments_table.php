@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('post_id')->references('id')->on('posts')->onUpdate('cascade')->onDelete('restrict');
+            // $table->foreign('post_id')->references('id')->on('posts')->onUpdate('cascade')->onDelete('restrict');
         });
     }
 
