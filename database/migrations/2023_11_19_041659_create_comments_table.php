@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('post_id');
+            $table->unsignedBigInteger('post_id');
             $table->string('name');
             $table->string('email');
             $table->text('comment');
             $table->timestamps();
             $table->softDeletes();
 
-            // $table->foreign('post_id')->references('id')->on('posts')->onUpdate('cascade')->onDelete('restrict');
+            $table->foreign('post_id')->references('id')->on('posts')->onUpdate('restrict')->onDelete('restrict');
         });
     }
 
