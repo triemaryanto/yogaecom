@@ -1,3 +1,3 @@
 <div>
-    {{-- Because she competes with no one, no one can compete with her. --}}
+    <livewire:admin.global.page-header judul="User List" subjudul="Admin Panel Elrista" :breadcrumb="['Dashboard']" />
 </div>
