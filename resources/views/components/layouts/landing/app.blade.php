@@ -1,840 +1,456 @@
-<!--
-THEME: Aviato | E-commerce template
-VERSION: 1.0.0
-AUTHOR: Themefisher
-
-HOMEPAGE: https://themefisher.com/products/aviato-e-commerce-template/
-DEMO: https://demo.themefisher.com/aviato/
-GITHUB: https://github.com/themefisher/Aviato-E-Commerce-Template/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <!-- Basic Page Needs
-  ================================================== -->
-    <meta charset="utf-8">
-    <title>Aviato | E-commerce template</title>
-
-    <!-- Mobile Specific Metas
-  ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Construction Html5 Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="author" content="Themefisher">
-    <meta name="generator" content="Themefisher Constra HTML Template v1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="multikart">
+    <meta name="keywords" content="multikart">
+    <meta name="author" content="multikart">
+    <link rel="icon" href="{{ asset('multikart_all_in_one/') }}/assets/images/favicon/1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('multikart_all_in_one/') }}/assets/images/favicon/1.png"
+        type="image/x-icon">
+    <title>Multikart - Multi-purpose E-commerce Html Template</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('landing-page/') }}/images/favicon.png" />
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 
-    <!-- Themefisher Icon font -->
-    <link rel="stylesheet" href="{{ asset('landing-page/') }}/plugins/themefisher-font/style.css">
-    <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="{{ asset('landing-page/') }}/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('multikart_all_in_one/') }}/assets/css/vendors/font-awesome.css">
 
-    <!-- Animate css -->
-    <link rel="stylesheet" href="{{ asset('landing-page/') }}/plugins/animate/animate.css">
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" href="{{ asset('landing-page/') }}/plugins/slick/slick.css">
-    <link rel="stylesheet" href="{{ asset('landing-page/') }}/plugins/slick/slick-theme.css">
+    <!--Slick slider css-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('multikart_all_in_one/') }}/assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('multikart_all_in_one/') }}/assets/css/vendors/slick-theme.css">
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('landing-page/') }}/css/style.css">
-    @vite(['resources/js/app.js'])
+    <!-- Animate icon -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('multikart_all_in_one/') }}/assets/css/vendors/animate.css">
+
+    <!-- Themify icon -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('multikart_all_in_one/') }}/assets/css/vendors/themify-icons.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('multikart_all_in_one/') }}/assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('multikart_all_in_one/') }}/assets/css/style.css">
+
+
+    @stack('css')
+    <!-- Styles -->
     @livewireStyles
-
 </head>
 
-<body id="body">
+<body class="theme-color-1">
 
-    <!-- Start Top Header Bar -->
-    <section class="top-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12 col-sm-4">
-                    <div class="contact-number">
-                        <i class="tf-ion-ios-telephone"></i>
-                        <span>0129- 12323-123123</span>
+
+    <!-- loader start -->
+    <div class="loader_skeleton">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header-contact">
+                            <ul>
+                                <li>Welcome to Our store Multikart</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>Call Us: 123 - 456 - 7890</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <ul class="header-dropdown">
+                            <li class="mobile-wishlist"><a href="#"><i class="fa fa-heart"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="onhover-dropdown mobile-account"> <i class="fa fa-user" aria-hidden="true"></i>
+                                My Account
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-4">
-                    <!-- Site Logo -->
-                    <div class="logo text-center">
-                        <a href="index.html">
-                            <!-- replace logo here -->
-                            <svg width="135px" height="29px" viewBox="0 0 155 29" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                    font-size="40" font-family="AustinBold, Austin" font-weight="bold">
-                                    <g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
-                                        <text id="AVIATO">
-                                            <tspan x="108.94" y="325">AVIATO</tspan>
-                                        </text>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12 col-sm-4">
-                    <!-- Cart -->
-                    <ul class="top-menu text-right list-inline">
-                        <li class="dropdown cart-nav dropdown-slide">
-                            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
-                                    class="tf-ion-android-cart"></i>Cart</a>
-                            <div class="dropdown-menu cart-dropdown">
-                                <!-- Cart Item -->
-                                <div class="media">
-                                    <a class="pull-left" href="#!">
-                                        <img class="media-object"
-                                            src="{{ asset('landing-page/') }}/images/shop/cart/cart-1.jpg"
-                                            alt="image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><a href="#!">Ladies Bag</a></h4>
-                                        <div class="cart-price">
-                                            <span>1 x</span>
-                                            <span>1250.00</span>
-                                        </div>
-                                        <h5><strong>$1200</strong></h5>
-                                    </div>
-                                    <a href="#!" class="remove"><i class="tf-ion-close"></i></a>
-                                </div><!-- / Cart Item -->
-                                <!-- Cart Item -->
-                                <div class="media">
-                                    <a class="pull-left" href="#!">
-                                        <img class="media-object"
-                                            src="{{ asset('landing-page/') }}/images/shop/cart/cart-2.jpg"
-                                            alt="image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><a href="#!">Ladies Bag</a></h4>
-                                        <div class="cart-price">
-                                            <span>1 x</span>
-                                            <span>1250.00</span>
-                                        </div>
-                                        <h5><strong>$1200</strong></h5>
-                                    </div>
-                                    <a href="#!" class="remove"><i class="tf-ion-close"></i></a>
-                                </div><!-- / Cart Item -->
-
-                                <div class="cart-summary">
-                                    <span>Total</span>
-                                    <span class="total-price">$1799.00</span>
+            </div>
+        </div>
+        @include('components.layouts.landing.header_one')
+        <div class="home-slider">
+            <div class="home"></div>
+        </div>
+        <section class="collection-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="ldr-bg">
+                            <div class="contain-banner">
+                                <div>
+                                    <h4></h4>
+                                    <h2></h2>
+                                    <h6></h6>
                                 </div>
-                                <ul class="text-center cart-buttons">
-                                    <li><a href="cart.html" class="btn btn-small">View Cart</a></li>
-                                    <li><a href="checkout.html" class="btn btn-small btn-solid-border">Checkout</a></li>
-                                </ul>
                             </div>
-
-                        </li><!-- / Cart -->
-
-                        <!-- Search -->
-                        <li class="dropdown search dropdown-slide">
-                            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
-                                    class="tf-ion-ios-search-strong"></i> Search</a>
-                            <ul class="dropdown-menu search-dropdown">
-                                <li>
-                                    <form action="post"><input type="search" class="form-control"
-                                            placeholder="Search..."></form>
-                                </li>
-                            </ul>
-                        </li><!-- / Search -->
-
-                        <!-- Languages -->
-                        <li class="commonSelect">
-                            <select class="form-control">
-                                <option>EN</option>
-                                <option>DE</option>
-                                <option>FR</option>
-                                <option>ES</option>
-                            </select>
-                        </li><!-- / Languages -->
-
-                    </ul><!-- / .nav .navbar-nav .navbar-right -->
-                </div>
-            </div>
-        </div>
-    </section><!-- End Top Header Bar -->
-
-
-    <!-- Main Menu Section -->
-    <section class="menu">
-        <nav class="navbar navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <h2 class="menu-title">Main Menu</h2>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div><!-- / .navbar-header -->
-
-                <!-- Navbar Links -->
-                <div id="navbar" class="navbar-collapse collapse text-center">
-                    <ul class="nav navbar-nav">
-
-                        <!-- Home -->
-                        <li class="dropdown ">
-                            <a href="index.html">Home</a>
-                        </li><!-- / Home -->
-
-
-                        <!-- Elements -->
-                        <li class="dropdown dropdown-slide">
-                            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                                data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Shop
-                                <span class="tf-ion-ios-arrow-down"></span></a>
-                            <div class="dropdown-menu">
-                                <div class="row">
-
-                                    <!-- Basic -->
-                                    <div class="col-lg-6 col-md-6 mb-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header">Pages</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="confirmation.html">Confirmation</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                    <!-- Layout -->
-                                    <div class="col-lg-6 col-md-6 mb-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header">Layout</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="product-single.html">Product Details</a></li>
-                                            <li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div><!-- / .row -->
-                            </div><!-- / .dropdown-menu -->
-                        </li><!-- / Elements -->
-
-
-                        <!-- Pages -->
-                        <li class="dropdown full-width dropdown-slide">
-                            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                                data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Pages
-                                <span class="tf-ion-ios-arrow-down"></span></a>
-                            <div class="dropdown-menu">
-                                <div class="row">
-
-                                    <!-- Introduction -->
-                                    <div class="col-sm-3 col-xs-12">
-                                        <ul>
-                                            <li class="dropdown-header">Introduction</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Contact -->
-                                    <div class="col-sm-3 col-xs-12">
-                                        <ul>
-                                            <li class="dropdown-header">Dashboard</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="dashboard.html">User Interface</a></li>
-                                            <li><a href="order.html">Orders</a></li>
-                                            <li><a href="address.html">Address</a></li>
-                                            <li><a href="profile-details.html">Profile Details</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Utility -->
-                                    <div class="col-sm-3 col-xs-12">
-                                        <ul>
-                                            <li class="dropdown-header">Utility</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="login.html">Login Page</a></li>
-                                            <li><a href="signin.html">Signin Page</a></li>
-                                            <li><a href="forget-password.html">Forget Password</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Mega Menu -->
-                                    <div class="col-sm-3 col-xs-12">
-                                        <a href="shop.html">
-                                            <img class="img-responsive"
-                                                src="{{ asset('landing-page/') }}/images/shop/header-img.jpg"
-                                                alt="menu image" />
-                                        </a>
-                                    </div>
-                                </div><!-- / .row -->
-                            </div><!-- / .dropdown-menu -->
-                        </li><!-- / Pages -->
-
-
-
-                        <!-- Blog -->
-                        <li class="dropdown dropdown-slide">
-                            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                                data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Blog
-                                <span class="tf-ion-ios-arrow-down"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a href="blog-full-width.html">Blog Full Width</a></li>
-                                <li><a href="blog-grid.html">Blog 2 Columns</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                            </ul>
-                        </li><!-- / Blog -->
-
-                        <!-- Shop -->
-                        <li class="dropdown dropdown-slide">
-                            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                                data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Elements
-                                <span class="tf-ion-ios-arrow-down"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="buttons.html">Buttons</a></li>
-                                <li><a href="alerts.html">Alerts</a></li>
-                            </ul>
-                        </li><!-- / Blog -->
-                    </ul><!-- / .nav .navbar-nav -->
-
-                </div>
-                <!--/.navbar-collapse -->
-            </div><!-- / .container -->
-        </nav>
-    </section>
-
-    <div class="hero-slider">
-        <div class="slider-item th-fullpage hero-area" style="background-image: url({{ asset('landing-page/') }}/images/slider/slider-1.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 text-center">
-                        <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">PRODUCTS</p>
-                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">The beauty of
-                            nature <br> is hidden in details.</h1>
-                        <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn"
-                            href="shop.html">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ldr-bg">
+                            <div class="contain-banner">
+                                <div>
+                                    <h4></h4>
+                                    <h2></h2>
+                                    <h6></h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="slider-item th-fullpage hero-area" style="background-image: url({{ asset('landing-page/') }}/images/slider/slider-3.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 text-left">
-                        <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">PRODUCTS</p>
-                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">The beauty of
-                            nature <br> is hidden in details.</h1>
-                        <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn"
-                            href="shop.html">Shop Now</a>
+        </section>
+        <div class="container section-b-space">
+            <div class="row section-t-space">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="product-para">
+                        <p class="first"></p>
+                        <p class="second"></p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="slider-item th-fullpage hero-area" style="background-image: url({{ asset('landing-page/') }}/images/slider/slider-2.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 text-right">
-                        <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">PRODUCTS</p>
-                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">The beauty of
-                            nature <br> is hidden in details.</h1>
-                        <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn"
-                            href="shop.html">Shop Now</a>
+                <div class="col-12">
+                    <div class="no-slider row">
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <div class="img-wrapper"></div>
+                            <div class="product-detail">
+                                <h4></h4>
+                                <h5></h5>
+                                <h5 class="second"></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- loader end -->
 
-    <section class="product-category section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title text-center">
-                        <h2>Product Category</h2>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="category-box">
-                        <a href="#!">
-                            <img src="{{ asset('landing-page/') }}/images/shop/category/category-1.jpg"
-                                alt="" />
-                            <div class="content">
-                                <h3>Clothes Sales</h3>
-                                <p>Shop New Season Clothing</p>
+
+    <!-- header start -->
+    <header>
+        <div class="mobile-fix-option"></div>
+        @include('components.layouts.landing.topheader')
+        @include('components.layouts.landing.sidenav')
+    </header>
+    <!-- header end -->
+
+    {{ $slot ?? '' }}
+
+    <!-- footer -->
+    @include('components.layouts.landing.footer')
+    <!-- footer end -->
+
+
+    <!-- cookie bar start -->
+    <div class="cookie-bar">
+        <p>We use cookies to improve our site and your shopping experience. By continuing to browse our site you accept
+            our cookie policy.</p>
+        <a href="javascript:void(0)" class="btn btn-solid btn-xs">accept</a>
+        <a href="javascript:void(0)" class="btn btn-solid btn-xs">decline</a>
+    </div>
+    <!-- cookie bar end -->
+
+
+    <!--modal popup start-->
+    <div class="modal fade bd-example-modal-lg theme-modal" id="exampleModal" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body modal1">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="modal-bg">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="offer-content"> <img
+                                            src="{{ asset('multikart_all_in_one/') }}/assets/images/Offer-banner.png"
+                                            class="img-fluid blur-up lazyload" alt="">
+                                        <h2>newsletter</h2>
+                                        <form
+                                            action="https://pixelstrap.us19.list-manage.com/subscribe/post?u=5a128856334b598b395f1fc9b&amp;id=082f74cbda"
+                                            class="auth-form needs-validation" method="post"
+                                            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                            target="_blank">
+                                            <div class="form-group mx-sm-3">
+                                                <input type="email" class="form-control" name="EMAIL"
+                                                    id="mce-EMAIL" placeholder="Enter your email"
+                                                    required="required">
+                                                <button type="submit" class="btn btn-solid"
+                                                    id="mc-submit">subscribe</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="category-box">
-                        <a href="#!">
-                            <img src="{{ asset('landing-page/') }}/images/shop/category/category-2.jpg"
-                                alt="" />
-                            <div class="content">
-                                <h3>Smart Casuals</h3>
-                                <p>Get Wide Range Selection</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="category-box category-box-2">
-                        <a href="#!">
-                            <img src="{{ asset('landing-page/') }}/images/shop/category/category-3.jpg"
-                                alt="" />
-                            <div class="content">
-                                <h3>Jewellery</h3>
-                                <p>Special Design Comes First</p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!--modal popup end-->
 
-    <section class="products section bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="title text-center">
-                    <h2>Trendy Products</h2>
-                </div>
-            </div>
-            <div class="row">
 
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <span class="bage">Sale</span>
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-1.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
+    <!-- Quick-view modal popup start-->
+    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content quick-view-modal">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="quick-view-img"><img
+                                    src="{{ asset('multikart_all_in_one/') }}/assets/images/pro3/1.jpg"
+                                    alt="" class="img-fluid blur-up lazyload"></div>
+                        </div>
+                        <div class="col-lg-6 rtl-text">
+                            <div class="product-right">
+                                <h2>Women Pink Shirt</h2>
+                                <h3>$32.96</h3>
+                                <ul class="color-variant">
+                                    <li class="bg-light0"></li>
+                                    <li class="bg-light1"></li>
+                                    <li class="bg-light2"></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Reef Boardsport</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-2.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-3.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Strayhorn SP</a></h4>
-                            <p class="price">$230</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-4.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Bradley Mid</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-5.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-6.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <span class="bage">Sale</span>
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-7.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-8.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive"
-                                src="{{ asset('landing-page/') }}/images/shop/products/product-9.jpg"
-                                alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal product-modal fade" id="product-modal">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="tf-ion-close"></i>
-                    </button>
-                    <div class="modal-dialog " role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-md-8 col-sm-6 col-xs-12">
-                                        <div class="modal-image">
-                                            <img class="img-responsive"
-                                                src="{{ asset('landing-page/') }}/images/shop/products/modal-product.jpg"
-                                                alt="product-img" />
+                                <div class="border-product">
+                                    <h6 class="product-title">product details</h6>
+                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium</p>
+                                </div>
+                                <div class="product-description border-product">
+                                    <div class="size-box">
+                                        <ul>
+                                            <li class="active"><a href="javascript:void(0)">s</a></li>
+                                            <li><a href="javascript:void(0)">m</a></li>
+                                            <li><a href="javascript:void(0)">l</a></li>
+                                            <li><a href="javascript:void(0)">xl</a></li>
+                                        </ul>
+                                    </div>
+                                    <h6 class="product-title">quantity</h6>
+                                    <div class="qty-box">
+                                        <div class="input-group"><span class="input-group-prepend"><button
+                                                    type="button" class="btn quantity-left-minus" data-type="minus"
+                                                    data-field=""><i class="ti-angle-left"></i></button> </span>
+                                            <input type="text" name="quantity" class="form-control input-number"
+                                                value="1"> <span class="input-group-prepend"><button
+                                                    type="button" class="btn quantity-right-plus" data-type="plus"
+                                                    data-field=""><i class="ti-angle-right"></i></button></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="product-short-details">
-                                            <h2 class="product-title">GM Pendant, Basalt Grey</h2>
-                                            <p class="product-price">$200</p>
-                                            <p class="product-short-description">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem iusto
-                                                nihil cum. Illo laborum numquam rem aut officia dicta cumque.
-                                            </p>
-                                            <a href="cart.html" class="btn btn-main">Add To Cart</a>
-                                            <a href="product-single.html" class="btn btn-transparent">View Product
-                                                Details</a>
+                                </div>
+                                <div class="product-buttons"><a href="#" class="btn btn-solid">add to
+                                        cart</a> <a href="#" class="btn btn-solid">view detail</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick-view modal popup end-->
+
+
+    <!-- cart start -->
+    <div class="addcart_btm_popup" id="fixed_cart_icon">
+        <a href="#" class="fixed_cart">
+            <i class="ti-shopping-cart"></i>
+        </a>
+    </div>
+    <!-- cart end -->
+
+
+    <!-- exit modal popup start-->
+    <div class="modal fade bd-example-modal-lg theme-modal exit-modal" id="exit_popup" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body modal1">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="modal-bg">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="media">
+                                        <img src="{{ asset('multikart_all_in_one/') }}/assets/images/stop.png"
+                                            class="stop img-fluid blur-up lazyload me-3" alt="">
+                                        <div class="media-body text-start align-self-center">
+                                            <div>
+                                                <h2>wait!</h2>
+                                                <h4>We want to give you
+                                                    <b>10% discount</b>
+                                                    <span>for your first order</span>
+                                                </h4>
+                                                <h5>Use discount code at checkout</h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.modal -->
-
-            </div>
-        </div>
-    </section>
-
-
-    <!--
-Start Call To Action
-==================================== -->
-    <section class="call-to-action bg-gray section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="title">
-                        <h2>SUBSCRIBE TO NEWSLETTER</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, <br> facilis numquam
-                            impedit ut sequi. Minus facilis vitae excepturi sit laboriosam.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-offset-3">
-                        <div class="input-group subscription-form">
-                            <input type="text" class="form-control" placeholder="Enter Your Email Address">
-                            <span class="input-group-btn">
-                                <button class="btn btn-main" type="button">Subscribe Now!</button>
-                            </span>
-                        </div><!-- /input-group -->
-                    </div><!-- /.col-lg-6 -->
-
-                </div>
-            </div> <!-- End row -->
-        </div> <!-- End container -->
-    </section> <!-- End section -->
-
-    <section class="section instagram-feed">
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    <h2>View us on instagram</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="instagram-slider" id="instafeed"
-                        data-accessToken="IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn">
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Add to cart modal popup end-->
 
 
-    <footer class="footer section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="social-media">
-                        <li>
-                            <a href="https://www.facebook.com/themefisher">
-                                <i class="tf-ion-social-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/themefisher">
-                                <i class="tf-ion-social-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/themefisher">
-                                <i class="tf-ion-social-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.com/themefisher/">
-                                <i class="tf-ion-social-pinterest"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer-menu text-uppercase">
-                        <li>
-                            <a href="contact.html">CONTACT</a>
-                        </li>
-                        <li>
-                            <a href="shop.html">SHOP</a>
-                        </li>
-                        <li>
-                            <a href="pricing.html">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">PRIVACY POLICY</a>
-                        </li>
-                    </ul>
-                    <p class="copyright-text">Copyright &copy;2021, Designed &amp; Developed by <a
-                            href="https://themefisher.com/">Themefisher</a></p>
-                </div>
-            </div>
+    <!-- facebook chat section start -->
+    <!-- <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src =
+                'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script> -->
+    <!-- Your customer chat code -->
+    <!-- <div class="fb-customerchat" attribution=setup_tool page_id="2123438804574660" theme_color="#0084ff"
+        logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"
+        logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?">
+    </div> -->
+    <!-- facebook chat section end -->
+
+
+    <!-- tap to top -->
+    <div class="tap-top top-cls">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
         </div>
-    </footer>
+    </div>
+    <!-- tap to top end -->
 
-    <!--
-    Essential Scripts
-    =====================================-->
 
-    <!-- Main jQuery -->
-    <script src="{{ asset('landing-page/') }}/plugins/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="{{ asset('landing-page/') }}/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Touchpin -->
-    <script src="{{ asset('landing-page/') }}/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-    <!-- Instagram Feed Js -->
-    <script src="{{ asset('landing-page/') }}/plugins/instafeed/instafeed.min.js"></script>
-    <!-- Video Lightbox Plugin -->
-    <script src="{{ asset('landing-page/') }}/plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
-    <!-- Count Down Js -->
-    <script src="{{ asset('landing-page/') }}/plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+    <!-- latest jquery-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/jquery-3.3.1.min.js"></script>
 
-    <!-- slick Carousel -->
-    <script src="{{ asset('landing-page/') }}/plugins/slick/slick.min.js"></script>
-    <script src="{{ asset('landing-page/') }}/plugins/slick/slick-animation.min.js"></script>
+    <!-- fly cart ui jquery-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/jquery-ui.min.js"></script>
 
-    <!-- Google Mapl -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    <script type="text/javascript" src="{{ asset('landing-page/') }}/plugins/google-map/gmap.js"></script>
+    <!-- exitintent jquery-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/jquery.exitintent.js"></script>
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/exit.js"></script>
 
-    <!-- Main Js File -->
-    <script src="{{ asset('landing-page/') }}/js/script.js"></script>
+    <!-- slick js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/slick.js"></script>
+
+    <!-- menu js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/menu.js"></script>
+
+    <!-- lazyload js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/lazysizes.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Notification js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/bootstrap-notify.min.js"></script>
+
+    <!-- Fly cart js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/fly-cart.js"></script>
+
+    <!-- Theme js-->
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/theme-setting.js"></script>
+    <script src="{{ asset('multikart_all_in_one/') }}/assets/js/script.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $('#exampleModal').modal('show');
+            }, 2500);
+        });
+
+        function openSearch() {
+            document.getElementById("search-overlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("search-overlay").style.display = "none";
+        }
+    </script>
     @livewireScripts
-
-
-
+    @stack('js')
 </body>
 
 </html>
