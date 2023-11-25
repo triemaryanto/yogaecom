@@ -1,6 +1,9 @@
 <?php
 
 use App\Livewire\Admin\Page\Home;
+use App\Livewire\Admin\Page\Permissions;
+use App\Livewire\Admin\Page\Role;
+use App\Livewire\Admin\Page\User;
 use App\Livewire\Landing\Page\Home\Home as HomeHome;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
@@ -28,4 +31,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', Home::class)->name('dashboard');
-});
+    Route::get('/permission', Permissions::class)->name('permission');
+    Route::get('/role', Role::class)->name('role');
+    Route::get('/user', User::class)->name('user');
+}); 
