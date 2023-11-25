@@ -16,7 +16,7 @@
                         </a>
                     </li>
                     @foreach ($breadcrumb ?? [] as $breadcrumb)
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item active"> {{ $breadcrumb }}</li>
                     @endforeach
                 </ol>
             </div>

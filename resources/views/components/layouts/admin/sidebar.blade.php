@@ -39,7 +39,7 @@
                      <li>
                          <a href="javascript:void(0)">
                              <i class="fa fa-circle"></i>
-                             <span>Physical</span>
+                             <span>Product</span>
                              <i class="fa fa-angle-right pull-right"></i>
                          </a>
 
@@ -67,40 +67,6 @@
 
                              <li>
                                  <a href="add-product.html">
-                                     <i class="fa fa-circle"></i>Add Product
-                                 </a>
-                             </li>
-                         </ul>
-                     </li>
-
-                     <li>
-                         <a href="javascript:void(0)">
-                             <i class="fa fa-circle"></i>
-                             <span>Digital</span>
-                             <i class="fa fa-angle-right pull-right"></i>
-                         </a>
-
-                         <ul class="sidebar-submenu">
-                             <li>
-                                 <a href="category-digital.html">
-                                     <i class="fa fa-circle"></i>Category
-                                 </a>
-                             </li>
-
-                             <li>
-                                 <a href="category-digitalsub.html">
-                                     <i class="fa fa-circle"></i>Sub Category
-                                 </a>
-                             </li>
-
-                             <li>
-                                 <a href="product-listdigital.html">
-                                     <i class="fa fa-circle"></i>Product List
-                                 </a>
-                             </li>
-
-                             <li>
-                                 <a href="add-digital-product.html">
                                      <i class="fa fa-circle"></i>Add Product
                                  </a>
                              </li>
@@ -148,97 +114,12 @@
              </li>
 
              <li>
-                 <a class="sidebar-header" href="javascript:void(0)">
-                     <i data-feather="dollar-sign"></i>
-                     <span>Sales</span>
-                     <i class="fa fa-angle-right pull-right"></i>
-                 </a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="order.html">
-                             <i class="fa fa-circle"></i>Orders
-                         </a>
-                     </li>
-                     <li>
-                         <a href="transactions.html">
-                             <i class="fa fa-circle"></i>Transactions
-                         </a>
-                     </li>
-                 </ul>
-             </li>
-
-             <li>
-                 <a class="sidebar-header" href="javascript:void(0)">
-                     <i data-feather="tag"></i>
-                     <span>Coupons</span>
-                     <i class="fa fa-angle-right pull-right"></i>
-                 </a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="coupon-list.html">
-                             <i class="fa fa-circle"></i>List
-                             Coupons
-                         </a>
-                     </li>
-                     <li>
-                         <a href="coupon-create.html">
-                             <i class="fa fa-circle"></i>Create
-                             Coupons
-                         </a>
-                     </li>
-                 </ul>
-             </li>
-
-             <li>
-                 <a class="sidebar-header" href="javascript:void(0)">
-                     <i data-feather="clipboard"></i>
-                     <span>Pages</span>
-                     <i class="fa fa-angle-right pull-right"></i>
-                 </a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="pages-list.html">
-                             <i class="fa fa-circle"></i>List
-                             Page
-                         </a>
-                     </li>
-                     <li>
-                         <a href="page-create.html">
-                             <i class="fa fa-circle"></i>Create
-                             Page
-                         </a>
-                     </li>
-                 </ul>
-             </li>
-
-             <li>
                  <a class="sidebar-header" href="media.html">
                      <i data-feather="camera"></i>
                      <span>Media</span>
                  </a>
              </li>
 
-             <li>
-                 <a class="sidebar-header" href="javascript:void(0)">
-                     <i data-feather="align-left"></i>
-                     <span>Menus</span>
-                     <i class="fa fa-angle-right pull-right"></i>
-                 </a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="menu-list.html">
-                             <i class="fa fa-circle"></i>Menu
-                             Lists
-                         </a>
-                     </li>
-                     <li>
-                         <a href="create-menu.html">
-                             <i class="fa fa-circle"></i>Create
-                             Menu
-                         </a>
-                     </li>
-                 </ul>
-             </li>
              {{-- @can('menu-user') --}}
              <li>
                  <a class="sidebar-header" href="javascript:void(0)">
@@ -254,100 +135,18 @@
                          </a>
                      </li>
                      <li>
-                         <a class="sidebar-header" href="javascript:void(0)">
-                             <span>Users</span>
-                             <i class="fa fa-angle-right pull-right"></i>
+                         <a href="{{ route('permission') }}">
+                             <i class="fa fa-circle"></i>Role
                          </a>
-                         <ul class="sidebar-submenu">
-                             <li>
-                                 <a href="{{ route('user') }}">
-                                     <i class="fa fa-circle"></i>User
-                                     List
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="create-user.html">
-                                     <i class="fa fa-circle"></i>Create
-                                     User
-                                 </a>
-                             </li>
-                             <li>
-                                 <a class="sidebar-header" href="javascript:void(0)">
-                                     <span>Users</span>
-                                     <i class="fa fa-angle-right pull-right"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="{{ route('permission') }}">
-                                     <i class="fa fa-circle"></i>Create
-                                     Permission
-                                 </a>
-                             </li>
-                         </ul>
                      </li>
                      <li>
                          <a href="{{ route('permission') }}">
-                             <i class="fa fa-circle"></i>Create
-                             Permission
+                             <i class="fa fa-circle"></i>Permission
                          </a>
                      </li>
                  </ul>
              </li>
              {{-- @endcan --}}
-             <li>
-                 <a class="sidebar-header" href="javascript:void(0)">
-                     <i data-feather="users"></i>
-                     <span>Vendors</span>
-                     <i class="fa fa-angle-right pull-right"></i>
-                 </a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="list-vendor.html">
-                             <i class="fa fa-circle"></i>Vendor
-                             List
-                         </a>
-                     </li>
-                     <li>
-                         <a href="create-vendors.html">
-                             <i class="fa fa-circle"></i>Create
-                             Vendor
-                         </a>
-                     </li>
-                 </ul>
-             </li>
-
-             <li>
-                 <a class="sidebar-header" href="javascript:void(0)">
-                     <i data-feather="chrome"></i>
-                     <span>Localization</span>
-                     <i class="fa fa-angle-right pull-right"></i>
-                 </a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="translations.html"><i class="fa fa-circle"></i>Translations
-                         </a>
-                     </li>
-                     <li>
-                         <a href="currency-rates.html"><i class="fa fa-circle"></i>Currency Rates
-                         </a>
-                     </li>
-                     <li>
-                         <a href="taxes.html"><i class="fa fa-circle"></i>Taxes
-                         </a>
-                     </li>
-                 </ul>
-             </li>
-
-             <li>
-                 <a class="sidebar-header" href="support-ticket.html"><i data-feather="phone"></i><span>Support
-                         Ticket</span>
-                 </a>
-             </li>
-
-             <li>
-                 <a class="sidebar-header" href="reports.html"><i data-feather="bar-chart"></i><span>Reports</span>
-                 </a>
-             </li>
 
              <li>
                  <a class="sidebar-header" href="javascript:void(0)"><i
