@@ -21,7 +21,8 @@
          </div>
          <ul class="sidebar-menu">
              <li>
-                 <a class="sidebar-header" href="index.html">
+                 <a class="sidebar-header {{ request()->is('dashboard') ? 'active' : '' }}"
+                     href="{{ route('dashboard') }}">
                      <i data-feather="home"></i>
                      <span>Dashboard</span>
                  </a>
@@ -238,29 +239,61 @@
                      </li>
                  </ul>
              </li>
-
+             {{-- @can('menu-user') --}}
              <li>
                  <a class="sidebar-header" href="javascript:void(0)">
                      <i data-feather="user-plus"></i>
-                     <span>Users</span>
+                     <span>Users Management</span>
                      <i class="fa fa-angle-right pull-right"></i>
                  </a>
                  <ul class="sidebar-submenu">
                      <li>
-                         <a href="user-list.html">
+                         <a href="{{ route('user') }}">
                              <i class="fa fa-circle"></i>User
                              List
                          </a>
                      </li>
                      <li>
-                         <a href="create-user.html">
+                         <a class="sidebar-header" href="javascript:void(0)">
+                             <span>Users</span>
+                             <i class="fa fa-angle-right pull-right"></i>
+                         </a>
+                         <ul class="sidebar-submenu">
+                             <li>
+                                 <a href="{{ route('user') }}">
+                                     <i class="fa fa-circle"></i>User
+                                     List
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="create-user.html">
+                                     <i class="fa fa-circle"></i>Create
+                                     User
+                                 </a>
+                             </li>
+                             <li>
+                                 <a class="sidebar-header" href="javascript:void(0)">
+                                     <span>Users</span>
+                                     <i class="fa fa-angle-right pull-right"></i>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="{{ route('permission') }}">
+                                     <i class="fa fa-circle"></i>Create
+                                     Permission
+                                 </a>
+                             </li>
+                         </ul>
+                     </li>
+                     <li>
+                         <a href="{{ route('permission') }}">
                              <i class="fa fa-circle"></i>Create
-                             User
+                             Permission
                          </a>
                      </li>
                  </ul>
              </li>
-
+             {{-- @endcan --}}
              <li>
                  <a class="sidebar-header" href="javascript:void(0)">
                      <i data-feather="users"></i>
