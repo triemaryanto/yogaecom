@@ -1,3 +1,3 @@
 <div>
-    {{-- Care about people's approval and you will be their prisoner. --}}
+    <livewire:admin.global.page-header judul="Role List" subjudul="Admin Panel Elrista" :breadcrumb="['Role', 'Role List']" />
 </div>

@@ -12,11 +12,18 @@
          <a href="javascript:void(0)" class="sidebar-back d-lg-none d-block"><i class="fa fa-times"
                  aria-hidden="true"></i></a>
          <div class="sidebar-user">
-             <img class="img-60" src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/images/dashboard/user3.jpg"
-                 alt="#" />
+             @if (auth()->user()->profile_photo_path)
+                 <img class="img-60"
+                     src="{{ route('helper.show-picture', ['path' => auth()->user()->profile_photo_path]) }}"
+                     alt="{{ auth()->user()->name }}" class="img-xs rounded-circle" />
+             @else
+                 <img src="https://ui-avatars.com/api/?name={{ auth()->user()->profile->name ?? auth()->user()->name }}"
+                     class="img-60">
+             @endif
              <div>
-                 <h6 class="f-14">JOHN</h6>
-                 <p>general manager.</p>
+                 <h6 class="f-14">{{ auth()->user()->name }}</h6>
+                 <p>{{ implode(', ',array_filter(auth()->user()->getRoleNames()->toArray(),'strlen')) }}
+                 </p>
              </div>
          </div>
          <ul class="sidebar-menu">
@@ -135,7 +142,7 @@
                          </a>
                      </li>
                      <li>
-                         <a href="{{ route('permission') }}">
+                         <a href="{{ route('role') }}">
                              <i class="fa fa-circle"></i>Role
                          </a>
                      </li>

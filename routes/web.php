@@ -1,12 +1,13 @@
 <?php
 
 use App\Livewire\Admin\Page\Home;
-use App\Livewire\Admin\Page\Permissions;
 use App\Livewire\Admin\Page\Role;
 use App\Livewire\Admin\Page\User;
-use App\Livewire\Landing\Page\Home\Home as HomeHome;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Admin\Page\Permissions;
+use App\Http\Controllers\HelperController;
+use App\Livewire\Landing\Page\Home\Home as HomeHome;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,7 @@ Route::get('template', function () {
 });
 
 Route::get('/', HomeHome::class)->name('home_depan');
-
+Route::get('show-picture', [HelperController::class, 'showPicture'])->name('helper.show-picture');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
