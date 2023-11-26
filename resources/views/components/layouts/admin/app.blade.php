@@ -149,6 +149,89 @@
 
     <!--script admin-->
     <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/admin-script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.addEventListener('Delete', event => {
+            Swal.fire(
+                'Deleted!', 'Data has been deleted.', 'success'
+            )
+        });
+        window.addEventListener('Success', event => {
+            Swal.fire(
+                'Good job!', 'Data has been added.', 'success'
+            )
+        });
+        window.addEventListener('Update', event => {
+            Swal.fire(
+                'Good job!', 'Data has been updated.', 'success'
+            )
+        });
+        window.addEventListener('Error', event => {
+            Swal.fire(
+                'Warning !', 'Data Not Excecution.', 'error'
+            )
+        });
+
+        window.addEventListener('swal:modal', event => {
+            Swal.fire({
+                icon: event.detail.type, // Jenis alert
+                title: event.detail.title, // Judul pesan
+                text: event.detail.text, // Isi pesan
+                toast: true,
+                position: 'top-right',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('livewire:load', function() {
+            Livewire.on('confirmRestore', (url) => {
+                Swal.fire({
+                    title: 'Restore.',
+                    text: "Apakah akan Restore data tersebut ?",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Restore!'
+                }).then((result) => {
+                    if (result.value) {
+                        Livewire.emit('restoreRecord', url);
+                    }
+                });
+            });
+        });
+        document.addEventListener('livewire:load', function() {
+            Livewire.on('confirmDelete', (url) => {
+                Swal.fire({
+                    title: 'Delete Permanen.',
+                    text: "Apakah akan delete secara permanen? Proses ini tidak bisa di ulangi.",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Delete Permanen!'
+                }).then((result) => {
+                    if (result.value) {
+                        Livewire.emit('deleteRecord', url);
+                    }
+                });
+            });
+        });
+        document.addEventListener('livewire:load', function() {
+            Livewire.on('showNotification', ($message) => {
+                Swal.fire({
+                    title: 'Info Masseh !.',
+                    text: $message,
+                    type: 'warning',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'Siap Masseh.'
+                })
+            });
+        });
+    </script>
 </body>
 
 </html>
