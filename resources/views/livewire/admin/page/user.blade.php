@@ -71,7 +71,7 @@
                                         {!! Form::select('role', get_role_user(), null, [
                                             'id' => 'role_user',
                                             'class' => 'form-control select role_user' . ($errors->has('role_user') ? ' border-danger' : null),
-                                            'placeholder' => 'Pilih Role User',
+                                            'placeholder' => 'Choose Role User',
                                             'wire:model.lazy' => 'role_user',
                                         ]) !!}
                                         @error('role_user')
@@ -85,7 +85,7 @@
                                     <div class="col-xl-8 col-md-7">
                                         {!! Form::password('password', [
                                             'class' => 'form-control' . ($errors->has('password') ? ' border-danger' : null),
-                                            'placeholder' => 'Masukkan Password',
+                                            'placeholder' => 'Enter Password',
                                             'value' => '12345678',
                                             'wire:model.lazy' => 'password',
                                         ]) !!}
@@ -100,7 +100,7 @@
                                     <div class="col-xl-8 col-md-7">
                                         {{ Form::password('confirmpassword', [
                                             'class' => 'form-control' . ($errors->has('confirmpassword') ? ' border-danger' : null),
-                                            'placeholder' => 'Confirmasi Password',
+                                            'placeholder' => 'Confirm Password',
                                             'wire:model.lazy' => 'confirmpassword',
                                         ]) }}
                                         @error('confirmpassword')
