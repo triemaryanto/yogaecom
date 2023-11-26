@@ -90,7 +90,7 @@
         </div>
     </div>
     @livewireScripts
-    @stack('js')
+
     <!-- latest jquery-->
     <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/jquery-3.3.1.min.js"></script>
 
@@ -149,7 +149,10 @@
 
     <!--script admin-->
     <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/admin-script.js"></script>
+    <script src="{{ asset('costum/select2/js/select2.min.js') }}"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('costum/select2/js/form-select2.js') }}"></script>
+    @stack('js')
     <script>
         window.addEventListener('Delete', event => {
             Swal.fire(
