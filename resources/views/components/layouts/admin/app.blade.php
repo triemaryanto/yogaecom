@@ -1,240 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Multikart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities." />
-    <meta name="keywords"
-        content="admin template, Multikart admin template, dashboard template, flat admin template, responsive admin template, web app" />
-    <meta name="author" content="pixelstrap" />
-    <link rel="icon" href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/images/dashboard/favicon.png"
-        type="image/x-icon" />
-    <link rel="shortcut icon" href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/images/dashboard/favicon.png"
-        type="image/x-icon" />
-    <title>Multikart - Premium Admin Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MPP KABUPATEN WONOSOBO</title>
+    <link rel="shortcut icon" href="{{ asset('images/pemda.ico') }}">
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="{{ asset('limitless/global_assets/css/icons/icomoon/styles.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('limitless/layout_1/LTR/default/full/assets/css/bootstrap.min.css') }}" rel="stylesheet"
+        type="text/css">
+    <link href="{{ asset('limitless/layout_1/LTR/default/full/assets/css/bootstrap_limitless.min.css') }}"
+        rel="stylesheet" type="text/css">
+    <link href="{{ asset('limitless/layout_1/LTR/default/full/assets/css/layout.min.css') }}" rel="stylesheet"
+        type="text/css">
+    <link href="{{ asset('limitless/layout_1/LTR/default/full/assets/css/components.min.css') }}" rel="stylesheet"
+        type="text/css">
+    <link href="{{ asset('limitless/layout_1/LTR/default/full/assets/css/colors.min.css') }}" rel="stylesheet"
+        type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="{{ asset('limitless/global_assets/js/main/jquery.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/main/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/loaders/blockui.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/notifications/pnotify.min.js') }}"></script>
+    <!-- /core JS files -->
 
-    <!-- Google font-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <!-- Theme JS files -->
+    <script src="{{ asset('limitless/global_assets/js/plugins/visualization/echarts/echarts.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/forms/styling/uniform.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/ui/moment/moment.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/pickers/daterangepicker.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/pickers/anytime.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/pickers/pickadate/picker.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/pickers/pickadate/picker.date.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/pickers/pickadate/picker.time.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/pickers/pickadate/legacy.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/notifications/jgrowl.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js') }}"></script>
+    <script src="{{ asset('limitless/global_assets/js/plugins/forms/selects/select2.min.js') }}"></script>
+    <script src="{{ asset('limitless/layout_1/LTR/default/full/assets/js/app.js') }}"></script>
+    <!-- /theme JS files -->
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
-
-    <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/vendors/font-awesome.css" />
-
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/vendors/flag-icon.css" />
-
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/vendors/icofont.css" />
-
-    <!-- Prism css-->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/vendors/prism.css" />
-
-    <!-- Chartist css -->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/vendors/chartist.css" />
-
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/vendors/bootstrap.css" />
-
-    <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/multikart_all_in_one/back-end/') }}/assets/css/style.css" />
-
-    @stack('css')
-    <!-- Styles -->
     @vite(['resources/js/app.js'])
-    @livewireStyles
 
+    <livewire:styles />
 </head>
 
-<body>
-    <!-- page-wrapper Start-->
-    <div class="page-wrapper">
-        <!-- Page Header Start-->
-        @include('components/layouts/admin/header')
-        <!-- Page Header Ends -->
+<body class="navbar-top">
 
-        <!-- Page Body Start-->
-        <div class="page-body-wrapper">
-            <!-- Page Sidebar Start-->
-            @include('components/layouts/admin/sidebar')
-            <!-- Page Sidebar Ends-->
+    <!-- Main navbar -->
+    @include('components.layouts.admin.navbar')
+    <!-- /main navbar -->
 
-            <!-- Right sidebar Start-->
-            @include('components/layouts/admin/rightbar')
-            <!-- Right sidebar Ends-->
 
-            <div class="page-body">
-                <!-- Container-fluid starts-->
-                {{ $slot ?? '' }}
-                <!-- Container-fluid Ends-->
+    <!-- Page content -->
+    <div class="page-content">
 
-                <!-- Container-fluid starts-->
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
 
-                <!-- Container-fluid Ends-->
+            <!-- Sidebar mobile toggler -->
+            <div class="sidebar-mobile-toggler text-center">
+                <a href="#" class="sidebar-mobile-main-toggle">
+                    <i class="icon-arrow-left8"></i>
+                </a>
+                Navigation
+                <a href="#" class="sidebar-mobile-expand">
+                    <i class="icon-screen-full"></i>
+                    <i class="icon-screen-normal"></i>
+                </a>
             </div>
+            <!-- /sidebar mobile toggler -->
 
-            <!-- footer start-->
-            @include('components/layouts/admin/footer')
-            <!-- footer end-->
+
+            <!-- Sidebar content -->
+            @include('components.layouts.admin.sidebar')
+            <!-- /sidebar content -->
+
         </div>
+        <!-- /main sidebar -->
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            {{ $header ?? '' }}
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+                {{ $slot ?? '' }}
+            </div>
+            <!-- /content area -->
+
+
+            <!-- Footer -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                        data-target="#navbar-footer">
+                        <i class="icon-unfold mr-2"></i>
+                        Footer
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-footer">
+                    <span class="navbar-text">
+                        &copy; 2023. by <a href="http://themeforest.net/user/Kopyov" target="_blank">TIM TIK DISKOMINFO
+                            WONOSOBO</a>
+                    </span>
+
+                    <ul class="navbar-nav ml-lg-auto">
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /main content -->
+
     </div>
-    @livewireScripts
+    <!-- /page content -->
+    <livewire:scripts />
 
-    <!-- latest jquery-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/jquery-3.3.1.min.js"></script>
-
-    <!-- Bootstrap js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/bootstrap.bundle.min.js"></script>
-
-    <!-- feather icon js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/icons/feather-icon/feather-icon.js"></script>
-
-    <!-- Sidebar jquery-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/sidebar-menu.js"></script>
-
-    <!--chartist js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/chart/chartist/chartist.js"></script>
-
-    <!--chartjs js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/chart/chartjs/chart.min.js"></script>
-
-    <!-- lazyload js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/lazysizes.min.js"></script>
-
-    <!--copycode js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/prism/prism.min.js"></script>
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/clipboard/clipboard.min.js"></script>
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/custom-card/custom-card.js"></script>
-
-    <!--counter js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/counter/jquery.waypoints.min.js"></script>
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/counter/jquery.counterup.min.js"></script>
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/counter/counter-custom.js"></script>
-
-    <!--peity chart js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/chart/peity-chart/peity.jquery.js"></script>
-
-    <!-- Apex Chart Js -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-    <!--sparkline chart js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/chart/sparkline/sparkline.js"></script>
-
-    <!--Customizer admin-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/admin-customizer.js"></script>
-
-    <!--dashboard custom js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/dashboard/default.js"></script>
-
-    <!--right sidebar js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/chat-menu.js"></script>
-
-    <!--height equal js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/height-equal.js"></script>
-
-    <!-- lazyload js-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/lazysizes.min.js"></script>
-
-    <!--script admin-->
-    <script src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/js/admin-script.js"></script>
-    <script src="{{ asset('costum/select2/js/select2.min.js') }}"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('costum/select2/js/form-select2.js') }}"></script>
     @stack('js')
+
     <script>
-        window.addEventListener('Delete', event => {
-            Swal.fire(
-                'Deleted!', 'Data has been deleted.', 'success'
-            )
-        });
-        window.addEventListener('Success', event => {
-            Swal.fire(
-                'Good job!', 'Data has been added.', 'success'
-            )
-        });
-        window.addEventListener('Update', event => {
-            Swal.fire(
-                'Good job!', 'Data has been updated.', 'success'
-            )
-        });
-        window.addEventListener('Error', event => {
-            Swal.fire(
-                'Warning !', 'Data Not Excecution.', 'error'
-            )
+        // ini gk tau siapa yang pasang
+        $('.select').select2({
+            minimumResultsForSearch: Infinity
         });
 
-        window.addEventListener('swal:modal', event => {
-            Swal.fire({
-                icon: event.detail.type, // Jenis alert
-                title: event.detail.title, // Judul pesan
-                text: event.detail.text, // Isi pesan
-                toast: true,
-                position: 'top-right',
-                showConfirmButton: false,
-                timer: 1500,
-                timerProgressBar: true
+        $('.select-perusahaan').select2({});
+
+        Livewire.on('buatNotif', (type, title, message, icon = 'icon-blocked') => {
+            new PNotify({
+                title: title,
+                text: message,
+                icon: icon,
+                type: type
             });
         });
-    </script>
-    <script>
-        document.addEventListener('livewire:load', function() {
-            Livewire.on('confirmRestore', (url) => {
-                Swal.fire({
-                    title: 'Restore.',
-                    text: "Apakah akan Restore data tersebut ?",
-                    type: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Restore!'
-                }).then((result) => {
-                    if (result.value) {
-                        Livewire.emit('restoreRecord', url);
-                    }
-                });
-            });
+
+        Livewire.on('select2', (e) => {
+            $('.select-perusahaan').select2({});
         });
-        document.addEventListener('livewire:load', function() {
-            Livewire.on('confirmDelete', (url) => {
-                Swal.fire({
-                    title: 'Delete Permanen.',
-                    text: "Apakah akan delete secara permanen? Proses ini tidak bisa di ulangi.",
-                    type: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Delete Permanen!'
-                }).then((result) => {
-                    if (result.value) {
-                        Livewire.emit('deleteRecord', url);
-                    }
-                });
+        window.addEventListener('block-card', event => {
+            {{-- var message = event.detail.message; --}}
+            $.blockUI({
+                message: '<i class="icon-spinner4 spinner"></i>',
+                timeout: 2000, //unblock after 2 seconds
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
             });
-        });
-        document.addEventListener('livewire:load', function() {
-            Livewire.on('showNotification', ($message) => {
-                Swal.fire({
-                    title: 'Info Masseh !.',
-                    text: $message,
-                    type: 'warning',
-                    confirmButtonColor: '#3085d6',
-                    confirmButtonText: 'Siap Masseh.'
-                })
-            });
-        });
+            {{-- document.getElementById('message').innerHTML = message; --}}
+
+
+        })
     </script>
 </body>
-
-</html>
