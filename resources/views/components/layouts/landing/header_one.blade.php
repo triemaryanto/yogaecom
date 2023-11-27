@@ -11,9 +11,9 @@
                             </a>
                         </div>
                         <div class="brand-logo">
-                            <a href="index.html"><img
+                            <a href="{{ url('') }}"><img
                                     src="{{ asset('multikart_all_in_one/') }}/assets/images/icon/logo.png"
-                                    class="img-fluid blur-up lazyload" alt=""></a>
+                                class="img-fluid blur-up lazyload" alt=""></a>
                         </div>
                     </div>
                     <div class="menu-right pull-right">
