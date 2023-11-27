@@ -6,7 +6,7 @@
                 <li>
                     <div class="mobile-back text-end">Back<i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                 </li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{ url('') }}">Home</a></li>
                 <li><a href="index.html">product</a></li>
                 <li>
                     <a href="#">product</a>
