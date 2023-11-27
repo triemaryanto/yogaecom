@@ -111,9 +111,14 @@
                 </li>
                 <li class="onhover-dropdown">
                     <div class="media align-items-center">
-                        <img class="align-self-center pull-right img-50 blur-up lazyloaded"
-                            src="{{ asset('/multikart_all_in_one/back-end/') }}/assets/images/dashboard/user3.jpg"
-                            alt="header-user">
+                        @if (auth()->user()->profile_photo_path)
+                            <img class="align-self-center pull-right img-50 blur-up lazyloaded"
+                                src="{{ route('helper.show-picture', ['path' => auth()->user()->profile_photo_path]) }}"
+                                alt="{{ auth()->user()->name }}" />
+                        @else
+                            <img src="https://ui-avatars.com/api/?name={{ auth()->user()->profile->name ?? auth()->user()->name }}"
+                                class="align-self-center pull-right img-50 blur-up lazyloaded">
+                        @endif
                         <div class="dotted-animation">
                             <span class="animate-circle"></span>
                             <span class="main-circle"></span>
